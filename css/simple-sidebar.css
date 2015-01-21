@@ -1,0 +1,245 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/* Toggle Styles */
+
+body {
+  overflow-x: hidden;
+}
+/*Typography*/
+
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+p {
+  font-family: 'Lato', sans-serif;
+}
+a {
+  color: white;
+  text-decoration: underline;
+}
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#wrapper.toggled {
+  padding-left: 250px;
+}
+/*Sidebar Styles*/
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #42444E;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+/* Sidebar Styles */
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.sidebar-nav ul {
+  list-style: none;
+  border-bottom: none;
+}
+.sidebar-nav li {
+  border-bottom: solid 1px #999;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -ms-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+.sidebar-nav li a:hover {
+  color: #656565;
+}
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+  border-bottom: none;
+}
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+.panel-collapse {
+  padding: 0px;
+}
+.panel-body {
+  margin: 0 auto;
+  width: 100%;
+}
+.panel-body ul {
+  margin-left: 0px;
+  padding: 0;
+}
+.panel-body ul li {
+  margin-left: 0px;
+  padding: 5px;
+}
+.reset {
+  color: #fff;
+}
+/*Typography*/
+/*Icon Styles*/
+
+.fa {
+  display: inline;
+  float: right;
+  position: relative;
+  top: 5px;
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -ms-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+.fa {
+  cursor: pointer;
+}
+/*Nav specific Icon Styles*/
+
+.sidebar-nav li a:active .fa {
+  color: #2ecc71;
+}
+/*ICON TWEAKS*/
+
+.closer {
+  color: #fff;
+  cursor: pointer;
+}
+.closer:hover {
+  color: #eee;
+  cursor: pointer;
+}
+.closer:active {
+  color: #ddd;
+}
+.fa-bars {
+  bottom: 25px;
+}
+/*Login Section*/
+
+.top-bar > .col-lg-10 {
+  text-align: right;
+}
+.top-bar > .col-lg-2 {
+  text-align: left;
+  padding-left: -15%;
+}
+.top-bar a {
+  color: #cc0033;
+  text-decoration: none;
+  font-weight: 700;
+}
+.login {
+  padding-right: 5px;
+  border-right: solid #cc0033 1.5px;
+}
+/*HAIL section*/
+
+#hail {
+  background-color: #cc0033;
+  color: #fff;
+}
+#menu-toggle {
+  padding-top: -5px;
+  height: 45px;
+  width: 45px;
+  border-radius: 55px;
+  text-align: center;
+  text-align: center;
+  vertical-align: bottom;
+}
+#menu-toggle i {
+  text-align: center;
+  left: 2px;
+  top: 5px;
+}
+/*ITEMS STYLES*/
+
+.item {
+  text-align: center;
+  background-color: #cc0033;
+/*  padding-top:calc(30% - 30px);*/
+  height: 150px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  margin-top:30px;
+}
+/*MEDIA QUERIES*/
+
+@media(min-width:768px) {
+  #wrapper {
+    padding-left: 250px;
+  }
+  #wrapper.toggled {
+    padding-left: 0;
+  }
+  #sidebar-wrapper {
+    width: 250px;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 0;
+  }
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+}
